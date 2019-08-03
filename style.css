@@ -1,0 +1,1357 @@
+body {
+  background-image: url(img/back.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.about-me, .selected-works {
+  z-index: 50;
+}
+
+.first-part .wrapp-top {
+  overflow: hidden;
+}
+.first-part .wrapp-top .logo {
+  float: left;
+}
+.first-part .wrapp-top .logo span {
+  font-size: 24px;
+  color: #707070;
+  margin-left: -41px;
+}
+.first-part .wrapp-top h2 {
+  width: auto;
+  display: block;
+  border-bottom: 2px inset #858585;
+  color: #707070;
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 7px;
+  margin-left: 70px;
+  text-align: end;
+}
+.first-part .circle-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.first-part .circle-nav .content > p {
+  display: block;
+  margin: auto;
+  font-size: 30px;
+  color: #707070;
+}
+.first-part .circle-nav .content > p span {
+  font-size: 60px;
+}
+.first-part .circle-nav .content .wrapp-circles {
+  width: 100%;
+}
+.first-part .circle-nav .content .wrapp-circles ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.first-part .circle-nav .content .wrapp-circles ul li {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.first-part .circle-nav .content .wrapp-circles ul li a {
+  width: 350px;
+  height: 350px;
+  border-radius: 250px;
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  text-decoration: none;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+}
+.first-part .circle-nav .content .wrapp-circles ul li a span {
+  display: block;
+}
+.first-part .circle-nav .content .wrapp-circles ul li a span:nth-child(1) {
+  margin-top: 30px;
+}
+.about-me {
+  background-image: url(img/circles-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-me .wrapp-about .about h1 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.about-me .wrapp-circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.about-me .wrapp-circles .about-circles {
+  position: relative;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles {
+  width: 189px;
+  height: 189px;
+  position: relative;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .anime-circle {
+  width: 100%;
+  height: 100%;
+  background-image: url(img/about_me/tocak.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .anime-circle span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: white;
+  text-shadow: 1px 1px #707070;
+  font-size: 18px;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .blue {
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: -52%;
+  left: -79%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .blue div {
+  width: 0px;
+  height: 0px;
+  background-image: url(img/about_me/circle-blue.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .blue div span {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  color: white;
+  text-shadow: 1px 1px #707070;
+  font-size: 18px;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .orange {
+  width: 141%;
+  height: 141%;
+  position: absolute;
+  top: -73%;
+  left: 16%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .orange div {
+  width: 0px;
+  height: 0px;
+  background-image: url(img/about_me/circle-orange.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .orange div span {
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  color: white;
+  text-shadow: 1px 1px #707070;
+  font-size: 18px;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .red-large {
+  width: 141%;
+  height: 141%;
+  position: absolute;
+  top: 32%;
+  left: -55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .red-large div {
+  width: 0px;
+  height: 0px;
+  background-image: url(img/about_me/circle-red-large.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .red-large div span {
+  position: absolute;
+  top: 68%;
+  left: 27%;
+  color: white;
+  text-shadow: 1px 1px #707070;
+  font-size: 18px;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .red-small {
+  width: 91%;
+  height: 91%;
+  position: absolute;
+  top: 44%;
+  left: 62%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .red-small div {
+  width: 0px;
+  height: 0px;
+  background-image: url(img/about_me/circle-red-small.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.about-me .wrapp-circles .about-circles .wrapp-anime-circles .red-small div span {
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  color: white;
+  text-shadow: 1px 1px #707070;
+  font-size: 18px;
+}
+.about-me .my-skils {
+  position: relative;
+  width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-me .my-skils .diagram {
+  width: 100%;
+  margin: auto;
+  height: 250px;
+  position: relative;
+}
+.about-me .my-skils .diagram .chart-legend {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.about-me .my-skils .diagram .chart-legend .label {
+  height: 20%;
+  border-top: 1px solid #aaaaaa;
+  position: relative;
+}
+.about-me .my-skils .diagram .chart-legend .label span {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 20%;
+  border-right: 4px solid;
+}
+.about-me .my-skils .diagram .chart-data {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 2px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0px;
+  border-bottom: 1px solid black;
+  width: 80%;
+  height: 100%;
+}
+.about-me .my-skils .diagram .chart-data li {
+  position: relative;
+  float: left;
+  width: 50px;
+  margin: 0px 5%;
+  height: 100%;
+}
+.about-me .my-skils .diagram .chart-data li div {
+  background-image: url(img/cube.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.about-me .my-skils .diagram .chart-data li span {
+  position: absolute;
+  right: -77%;
+  bottom: 0px;
+  height: 7px;
+  width: 1px;
+  background-color: black;
+}
+.about-me .my-skils .diagram .chart-data li span.first-span {
+  right: 184%;
+}
+.about-me .my-skils .diagram .chart-skills {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  bottom: -120px;
+  width: 80%;
+}
+.about-me .my-skils .diagram .chart-skills li {
+  float: left;
+  margin: 40px 0px;
+  width: 16.6666666667%;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+.about-me .my-skils .diagram .chart-skills li span {
+  display: block;
+  transform: rotate(40deg);
+}
+
+.selected-works {
+  background-image: url(img/circles-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.selected-works .wrapper-allie .some-tumbnail {
+  height: 300px;
+  position: relative;
+  z-index: 1;
+}
+.selected-works .wrapper-allie .some-tumbnail .imgs-container {
+  display: none;
+}
+.selected-works .wrapper-allie .some-tumbnail .abs-tumbnail {
+  background-image: url(img/selected_works/allie-logo.png);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selected-works .wrapper-allie .some-tumbnail .abs-tumbnail .shadow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.selected-works .wrapper-allie .some-tumbnail .abs-tumbnail .anim-icon .borders {
+  width: 60px;
+  height: 60px;
+  background-image: url(img/selected_works/anim_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: -70px;
+  opacity: 0;
+}
+.selected-works .wrapper-allie .some-tumbnail .abs-tumbnail .anim-icon .borders .arrow {
+  width: 20px;
+  height: 20px;
+  background-image: url(img/selected_works/arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  opacity: 0;
+}
+.selected-works .wrapper-allie .some-tumbnail .abs-tumbnail:hover .shadow {
+  transition: opacity 0.3s;
+  opacity: 1;
+  cursor: pointer;
+}
+.selected-works .wrapper-allie .some-info {
+  height: 300px;
+}
+.selected-works .wrapper-allie .some-info .some-text {
+  background-image: url(img/selected_works/works-info.png);
+  background-position: 100% 0px !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+.selected-works .wrapper-allie .some-info .some-text h2 {
+  margin: 20px 40px;
+}
+.selected-works .wrapper-allie .some-info .some-text .work-description {
+  margin: 20px 40px;
+}
+.selected-works .wrapper-allie .some-info .some-text .triangle {
+  background-image: url(img/selected_works/works-info.png);
+  background-position: 0px -900px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+.selected-works .wrapper-allie .some-info .some-text .yelow {
+  background-color: #f2e1ac !important;
+}
+.selected-works .wrapper-allie .some-info .some-text .red {
+  background-color: #f2836b !important;
+}
+.selected-works .wrapper-allie .some-info .some-text .read-more {
+  padding: 4px 20px;
+  background-color: #63a69f;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fbfdfc;
+  overflow: hidden;
+}
+.selected-works .wrapper-allie .some-info .some-text .read-more span {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  float: left;
+  width: 30px;
+  text-align: end;
+}
+.selected-works .wrapper-allie .some-info .some-text .read-more .more {
+  overflow: hidden;
+  width: 0px;
+  text-align: left;
+}
+.selected-works .wrapper-atalanta .some-tumbnail {
+  height: 300px;
+  position: relative;
+  z-index: 1;
+}
+.selected-works .wrapper-atalanta .some-tumbnail .imgs-container {
+  display: none;
+}
+.selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail {
+  background-image: url(img/selected_works/atalanta-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail .shadow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail .anim-icon .borders {
+  width: 60px;
+  height: 60px;
+  background-image: url(img/selected_works/anim_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: -70px;
+  opacity: 0;
+}
+.selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail .anim-icon .borders .arrow {
+  width: 20px;
+  height: 20px;
+  background-image: url(img/selected_works/arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  opacity: 0;
+}
+.selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail:hover .shadow {
+  transition: opacity 0.3s;
+  opacity: 1;
+  cursor: pointer;
+}
+.selected-works .wrapper-atalanta .some-info {
+  height: 300px;
+}
+.selected-works .wrapper-atalanta .some-info .some-text {
+  background-image: url(img/selected_works/works-info.png);
+  background-position: 100% -300px !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+.selected-works .wrapper-atalanta .some-info .some-text h2 {
+  margin: 20px 40px;
+}
+.selected-works .wrapper-atalanta .some-info .some-text .work-description {
+  margin: 20px 40px;
+}
+.selected-works .wrapper-atalanta .some-info .some-text .triangle {
+  background-image: url(img/selected_works/works-info.png);
+  background-position: -20px -900px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+.selected-works .wrapper-atalanta .some-info .some-text .yelow {
+  background-color: #f2e1ac !important;
+}
+.selected-works .wrapper-atalanta .some-info .some-text .red {
+  background-color: #f2836b !important;
+}
+.selected-works .wrapper-atalanta .some-info .some-text .read-more {
+  padding: 4px 20px;
+  background-color: #63a69f;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fbfdfc;
+  overflow: hidden;
+}
+.selected-works .wrapper-atalanta .some-info .some-text .read-more span {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  float: left;
+  width: 30px;
+  text-align: end;
+}
+.selected-works .wrapper-atalanta .some-info .some-text .read-more .more {
+  overflow: hidden;
+  width: 0px;
+  text-align: left;
+}
+.selected-works .wrapper-womo .some-tumbnail {
+  height: 300px;
+  position: relative;
+  z-index: 1;
+}
+.selected-works .wrapper-womo .some-tumbnail .imgs-container {
+  display: none;
+}
+.selected-works .wrapper-womo .some-tumbnail .abs-tumbnail {
+  background-image: url(img/selected_works/parfum.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selected-works .wrapper-womo .some-tumbnail .abs-tumbnail .shadow {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.selected-works .wrapper-womo .some-tumbnail .abs-tumbnail .anim-icon .borders {
+  width: 60px;
+  height: 60px;
+  background-image: url(img/selected_works/anim_icon.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin-bottom: -70px;
+  opacity: 0;
+}
+.selected-works .wrapper-womo .some-tumbnail .abs-tumbnail .anim-icon .borders .arrow {
+  width: 20px;
+  height: 20px;
+  background-image: url(img/selected_works/arrow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  opacity: 0;
+}
+.selected-works .wrapper-womo .some-tumbnail .abs-tumbnail:hover .shadow {
+  transition: opacity 0.3s;
+  opacity: 1;
+  cursor: pointer;
+}
+.selected-works .wrapper-womo .some-info {
+  height: 300px;
+}
+.selected-works .wrapper-womo .some-info .some-text {
+  background-image: url(img/selected_works/works-info.png);
+  background-position: 100% -600px !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+}
+.selected-works .wrapper-womo .some-info .some-text h2 {
+  margin: 20px 40px;
+}
+.selected-works .wrapper-womo .some-info .some-text .work-description {
+  margin: 20px 40px;
+}
+.selected-works .wrapper-womo .some-info .some-text .triangle {
+  background-image: url(img/selected_works/works-info.png);
+  background-position: -40px -900px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+}
+.selected-works .wrapper-womo .some-info .some-text .yelow {
+  background-color: #f2e1ac !important;
+}
+.selected-works .wrapper-womo .some-info .some-text .red {
+  background-color: #f2836b !important;
+}
+.selected-works .wrapper-womo .some-info .some-text .read-more {
+  padding: 4px 20px;
+  background-color: #63a69f;
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  color: #fbfdfc;
+  overflow: hidden;
+}
+.selected-works .wrapper-womo .some-info .some-text .read-more span {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  float: left;
+  width: 30px;
+  text-align: end;
+}
+.selected-works .wrapper-womo .some-info .some-text .read-more .more {
+  overflow: hidden;
+  width: 0px;
+  text-align: left;
+}
+
+.about-me, .selected-works {
+  z-index: 99 !important;
+}
+
+.wrapp-site {
+  z-index: -2;
+}
+
+.footer {
+  background-image: url(img/slider/overlay-background.png);
+  height: 550px;
+  background-attachment: fixed;
+  position: absolute !important;
+  z-index: -1;
+}
+.footer .container .inner {
+  position: fixed;
+  height: 550px;
+  left: 0px;
+  bottom: 0px;
+  color: #cccccc;
+  width: 100%;
+  display: none;
+}
+.footer .container .inner .email button {
+  background-color: #63a69f;
+}
+.footer .container .inner .email button a {
+  text-decoration: none;
+  color: #212529;
+}
+.footer .container .inner .email1 button {
+  background-color: #f2836b;
+}
+.footer .container .inner .social {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.footer .container .inner .social .linkedin {
+  color: white;
+  font-size: 24px;
+  float: left;
+  margin-right: 5px;
+}
+.footer .container .inner .social .twitter {
+  color: white;
+  font-size: 24px;
+  float: left;
+  margin-left: 5px;
+}
+
+.wrapp-top-nav {
+  position: fixed;
+  z-index: 99;
+}
+.wrapp-top-nav .top-nav {
+  background-color: #0000008a;
+  padding-top: 10px;
+}
+.wrapp-top-nav .top-nav .logo {
+  position: relative;
+}
+.wrapp-top-nav .top-nav .logo img {
+  width: 40px;
+  height: 40px;
+}
+.wrapp-top-nav .top-nav .logo span {
+  color: #cccccc;
+  text-shadow: 1px 1px #707070;
+  font-size: 16px;
+}
+.wrapp-top-nav .top-nav .nav .nav-item a {
+  transition: all 0.2s;
+  color: #cccccc;
+}
+.wrapp-top-nav .top-nav .nav .nav-item a:hover {
+  transition: all 0.2s;
+  color: #ffffff;
+}
+
+.wrapper-slider {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-image: url(img/slider/overlay-background.png);
+  height: 0px;
+  z-index: 9999;
+}
+.wrapper-slider .content {
+  display: none;
+  height: 100%;
+  position: relative;
+}
+.wrapper-slider .content h1 {
+  color: #cccccc;
+}
+.wrapper-slider .content p {
+  color: #cccccc;
+}
+.wrapper-slider .content .iks {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+.wrapper-slider .content .iks:hover {
+  transition: all 0.3s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.wrapper-slider .content .arrow-left {
+  font-size: 40px;
+  color: #cccccc;
+  position: absolute;
+  left: -20px;
+  top: 53%;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+.wrapper-slider .content .arrow-left:hover {
+  transition: all 0.3s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.wrapper-slider .content .arrow-right {
+  font-size: 40px;
+  color: #cccccc;
+  position: absolute;
+  right: -20px;
+  top: 53%;
+  transition: opacity 0.3s;
+  opacity: 1;
+}
+.wrapper-slider .content .arrow-right:hover {
+  transition: all 0.3s;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.wrapper-slider .content .container-slides {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 85%;
+  overflow: hidden;
+}
+.wrapper-slider .content .container-slides .movable-slides {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 600%;
+  height: 100%;
+}
+.wrapper-slider .content .container-slides .movable-slides .slide {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.wrapper-slider .content .container-slides .movable-slides .slide .img-wrapp {
+  width: 70%;
+  padding-top: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper-slider .content .container-slides .movable-slides .slide:hover {
+  cursor: grab;
+}
+.wrapper-slider .content .container-slides .movable-slides .slide:active {
+  cursor: grabbing;
+}
+.wrapper-slider .content .curent-num {
+  position: absolute;
+  bottom: 50px;
+  left: 15px;
+  color: #cccccc;
+}
+.wrapper-slider .content .wrapp-points {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-slider .content .wrapp-points .points {
+  overflow: hidden;
+}
+.wrapper-slider .content .wrapp-points .points .point {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0px 5px;
+}
+.wrapper-slider .content .wrapp-points .points .point a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: background-color 0.3s;
+  background-color: #7b7b7c;
+  border-radius: 10px;
+}
+.wrapper-slider .content .wrapp-points .points .point a.active-point {
+  transition: background-color 0.3s;
+  background-color: white !important;
+}
+
+.ui-loader {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  .my-skils {
+    height: 1060px !important;
+    width: 100% !important;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .my-skils h1 {
+    margin-bottom: 100px;
+  }
+  .my-skils .diagram {
+    transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    width: 950px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .my-skils .diagram .chart-legend {
+    height: 100% !important;
+  }
+  .my-skils .diagram .chart-legend li.label {
+    position: relative;
+  }
+  .my-skils .diagram .chart-legend li.label span {
+    position: absolute;
+    left: -15%;
+    padding-top: 0px;
+    box-sizing: border-box;
+    border: none !important;
+    transform: rotate(-20deg);
+    text-align: end;
+    font-size: 14px;
+    margin-left: -60px;
+  }
+  .my-skils .diagram .chart-data {
+    width: 100% !important;
+  }
+  .my-skils .diagram .chart-data li {
+    margin: 0px 5.69% !important;
+  }
+  .my-skils .diagram .chart-data li span {
+    right: -111% !important;
+  }
+  .my-skils .diagram .chart-data li span.first-span {
+    right: 209% !important;
+  }
+  .my-skils .diagram .chart-skills {
+    bottom: 0px !important;
+    width: 100% !important;
+  }
+  .my-skils .diagram .chart-skills li {
+    position: relative;
+    margin: 62px 0px;
+    width: 16.6666666667% !important;
+  }
+  .my-skils .diagram .chart-skills li span {
+    transform: rotate(-90deg) !important;
+    transform-origin: 4px 59px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .selected-works .wrapper-allie .some-tumbnail {
+    height: 300px;
+    position: relative;
+    z-index: 1;
+  }
+  .selected-works .wrapper-allie .some-tumbnail .imgs-container {
+    display: none;
+  }
+  .selected-works .wrapper-allie .some-tumbnail .abs-tumbnail {
+    background-image: url(img/selected_works/allie-logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selected-works .wrapper-allie .some-tumbnail .abs-tumbnail .shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  .selected-works .wrapper-allie .some-tumbnail .abs-tumbnail .anim-icon .borders {
+    width: 60px;
+    height: 60px;
+    background-image: url(img/selected_works/anim_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: -70px;
+    opacity: 0;
+  }
+  .selected-works .wrapper-allie .some-tumbnail .abs-tumbnail .anim-icon .borders .arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url(img/selected_works/arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 25px;
+    left: 16px;
+    opacity: 0;
+  }
+  .selected-works .wrapper-allie .some-tumbnail .abs-tumbnail:hover .shadow {
+    transition: opacity 0.3s;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .selected-works .wrapper-allie .some-info {
+    height: 300px;
+  }
+  .selected-works .wrapper-allie .some-info .some-text {
+    background-image: url(img/selected_works/works-info.png);
+    background-position: 100% 100% !important;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+  }
+  .selected-works .wrapper-allie .some-info .some-text h2 {
+    margin: 20px 40px;
+  }
+  .selected-works .wrapper-allie .some-info .some-text .work-description {
+    margin: 20px 40px;
+  }
+  .selected-works .wrapper-allie .some-info .some-text .triangle {
+    background-image: url(img/selected_works/works-info.png);
+    background-position: 0px -932px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+  }
+  .selected-works .wrapper-allie .some-info .some-text .yelow {
+    background-color: #f2e1ac !important;
+  }
+  .selected-works .wrapper-allie .some-info .some-text .red {
+    background-color: #f2836b !important;
+  }
+  .selected-works .wrapper-allie .some-info .some-text .read-more {
+    padding: 4px 20px;
+    background-color: #63a69f;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #fbfdfc;
+    overflow: hidden;
+  }
+  .selected-works .wrapper-allie .some-info .some-text .read-more span {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: left;
+    width: 30px;
+    text-align: end;
+  }
+  .selected-works .wrapper-allie .some-info .some-text .read-more .more {
+    overflow: hidden;
+    width: 0px;
+    text-align: left;
+  }
+  .selected-works .wrapper-allie .triangle-1 {
+    position: absolute;
+    background-image: url(img/selected_works/works-info.png);
+    background-position: 0px -932px;
+    right: 0px;
+    bottom: 0px;
+    width: 36px;
+    height: 36px;
+  }
+  .selected-works .wrapper-atalanta .some-tumbnail {
+    height: 300px;
+    position: relative;
+    z-index: 1;
+  }
+  .selected-works .wrapper-atalanta .some-tumbnail .imgs-container {
+    display: none;
+  }
+  .selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail {
+    background-image: url(img/selected_works/atalanta-logo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail .shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  .selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail .anim-icon .borders {
+    width: 60px;
+    height: 60px;
+    background-image: url(img/selected_works/anim_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: -70px;
+    opacity: 0;
+  }
+  .selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail .anim-icon .borders .arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url(img/selected_works/arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 25px;
+    left: 16px;
+    opacity: 0;
+  }
+  .selected-works .wrapper-atalanta .some-tumbnail .abs-tumbnail:hover .shadow {
+    transition: opacity 0.3s;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .selected-works .wrapper-atalanta .some-info {
+    height: 300px;
+  }
+  .selected-works .wrapper-atalanta .some-info .some-text {
+    background-image: url(img/selected_works/works-info.png);
+    background-position: 100% 100% !important;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+  }
+  .selected-works .wrapper-atalanta .some-info .some-text h2 {
+    margin: 20px 40px;
+  }
+  .selected-works .wrapper-atalanta .some-info .some-text .work-description {
+    margin: 20px 40px;
+  }
+  .selected-works .wrapper-atalanta .some-info .some-text .triangle {
+    background-image: url(img/selected_works/works-info.png);
+    background-position: 100% -900px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+  }
+  .selected-works .wrapper-atalanta .some-info .some-text .yelow {
+    background-color: #f2e1ac !important;
+  }
+  .selected-works .wrapper-atalanta .some-info .some-text .red {
+    background-color: #f2836b !important;
+  }
+  .selected-works .wrapper-atalanta .some-info .some-text .read-more {
+    padding: 4px 20px;
+    background-color: #63a69f;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #fbfdfc;
+    overflow: hidden;
+  }
+  .selected-works .wrapper-atalanta .some-info .some-text .read-more span {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: left;
+    width: 30px;
+    text-align: end;
+  }
+  .selected-works .wrapper-atalanta .some-info .some-text .read-more .more {
+    overflow: hidden;
+    width: 0px;
+    text-align: left;
+  }
+  .selected-works .wrapper-atalanta .triangle-1 {
+    position: absolute;
+    background-image: url(img/selected_works/works-info.png);
+    background-position: -72px -932px;
+    right: 0px;
+    bottom: 0px;
+    width: 36px;
+    height: 36px;
+  }
+  .selected-works .wrapper-womo .some-tumbnail {
+    height: 300px;
+    position: relative;
+    z-index: 1;
+  }
+  .selected-works .wrapper-womo .some-tumbnail .imgs-container {
+    display: none;
+  }
+  .selected-works .wrapper-womo .some-tumbnail .abs-tumbnail {
+    background-image: url(img/selected_works/parfum.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selected-works .wrapper-womo .some-tumbnail .abs-tumbnail .shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+  .selected-works .wrapper-womo .some-tumbnail .abs-tumbnail .anim-icon .borders {
+    width: 60px;
+    height: 60px;
+    background-image: url(img/selected_works/anim_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: -70px;
+    opacity: 0;
+  }
+  .selected-works .wrapper-womo .some-tumbnail .abs-tumbnail .anim-icon .borders .arrow {
+    width: 20px;
+    height: 20px;
+    background-image: url(img/selected_works/arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 25px;
+    left: 16px;
+    opacity: 0;
+  }
+  .selected-works .wrapper-womo .some-tumbnail .abs-tumbnail:hover .shadow {
+    transition: opacity 0.3s;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .selected-works .wrapper-womo .some-info {
+    height: 300px;
+  }
+  .selected-works .wrapper-womo .some-info .some-text {
+    background-image: url(img/selected_works/works-info.png);
+    background-position: 100% 100% !important;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+  }
+  .selected-works .wrapper-womo .some-info .some-text h2 {
+    margin: 20px 40px;
+  }
+  .selected-works .wrapper-womo .some-info .some-text .work-description {
+    margin: 20px 40px;
+  }
+  .selected-works .wrapper-womo .some-info .some-text .triangle {
+    background-image: url(img/selected_works/works-info.png);
+    background-position: 100% -900px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+  }
+  .selected-works .wrapper-womo .some-info .some-text .yelow {
+    background-color: #f2e1ac !important;
+  }
+  .selected-works .wrapper-womo .some-info .some-text .red {
+    background-color: #f2836b !important;
+  }
+  .selected-works .wrapper-womo .some-info .some-text .read-more {
+    padding: 4px 20px;
+    background-color: #63a69f;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: #fbfdfc;
+    overflow: hidden;
+  }
+  .selected-works .wrapper-womo .some-info .some-text .read-more span {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    float: left;
+    width: 30px;
+    text-align: end;
+  }
+  .selected-works .wrapper-womo .some-info .some-text .read-more .more {
+    overflow: hidden;
+    width: 0px;
+    text-align: left;
+  }
+  .selected-works .wrapper-womo .triangle-1 {
+    position: absolute;
+    background-image: url(img/selected_works/works-info.png);
+    background-position: 0px -932px;
+    right: 0px;
+    bottom: 0px;
+    width: 36px;
+    height: 36px;
+  }
+  .selected-works .abs-tumbnail {
+    left: 0px !important;
+  }
+  .selected-works .some-text {
+    left: 0px !important;
+    top: 0px !important;
+    height: 150px !important;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .wrapp-anime-circles {
+    width: 129px !important;
+    height: 129px !important;
+  }
+}
+.selected-works {
+  z-index: 9999;
+}
+
+/*# sourceMappingURL=style.css.map */

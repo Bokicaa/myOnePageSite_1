@@ -1,0 +1,773 @@
+$text-color:#707070;
+$text-color1: #cccccc;
+$text-hover-color: #ffffff;
+
+@mixin circles($dim, $url, $span_top, $span_left) {
+    width: $dim;
+    height: $dim;
+    background-image: $url;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    span {
+        position: absolute;
+        top: $span_top;
+        left: $span_left;
+        color: white;
+        text-shadow: 1px 1px #707070;
+        font-size: 18px;
+    }
+}
+@mixin wrapp_circle($dim, $top, $left) {
+    width: $dim;
+    height: $dim;
+    position: absolute;
+    top: $top;
+    left: $left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin selected_works($height, $thumb, $back, $pos, $pos1, $property, $tri_pos, $tri_pos1) {
+    .some-tumbnail {
+        height: $height;
+        position: relative;
+        z-index: 1;
+        .imgs-container {
+            display: none;
+        }
+        .abs-tumbnail {
+            background-image: $thumb;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 10px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            .shadow {
+                position: absolute;
+                top:0px;
+                left:0px;
+                width: 100%;
+                height: 100%;
+                background-color: #00000080;
+                transition: opacity .3s;
+                opacity: 0;
+            }
+            .anim-icon {
+                .borders {
+                    width: 60px;
+                    height: 60px;
+                    background-image: url(img/selected_works/anim_icon.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    position: relative;
+                    margin-bottom: -70px;
+                    opacity: 0;
+                    .arrow {
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(img/selected_works/arrow.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+                        position:absolute;
+                        top:25px;
+                        left: 16px;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+        .abs-tumbnail:hover .shadow {
+            transition: opacity .3s;
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+    .some-info {
+        height: 300px;
+        .some-text {
+            background-image: $back;
+            background-position: $pos $pos1 !important;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top:20px;
+            left: -10px;
+            h2 {
+                margin: 20px 40px;
+            }
+            .work-description {
+                margin: 20px 40px;
+            }
+            .triangle {
+                background-image: $back;
+                background-position: $tri_pos $tri_pos1;
+                background-repeat: no-repeat;
+                position: absolute;
+                bottom: 0px;
+                #{$property}: 0px;
+                width: 20px;
+                height: 20px;
+            }
+
+            .yelow {
+                background-color: #f2e1ac !important;
+            }
+            .red {
+                background-color: #f2836b !important;
+            }
+            .read-more {
+                padding: 4px 20px;
+                background-color: #63a69f;
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+                color: #fbfdfc;
+                overflow: hidden;
+                span {
+                    margin: 0px;
+                    padding:0px;
+                    display: block;
+                    float: left;
+                    width: 30px;
+                    text-align: end;
+                }
+                .more {
+                    overflow: hidden;
+                    width: 0px;
+                    text-align: left;
+                }
+            }
+        }
+        
+    }
+}
+
+@mixin triangle_1($back, $pos1, $pos2) {
+    .triangle-1 {
+        position: absolute;
+        background-image: $back;
+        background-position: $pos1 $pos2;
+        right: 0px;
+        bottom: 0px;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+body {
+    background-image: url(img/back.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+}
+
+.about-me, .selected-works {
+    z-index: 50;
+}
+
+.first-part {
+    .wrapp-top {
+        overflow: hidden;
+        .logo {
+            float: left;
+            span {
+                font-size: 24px;
+                color: $text-color;
+                margin-left: -41px;
+            }
+        }
+        h2 {
+            width: auto;
+            display: block;
+            border-bottom: 2px inset #858585;
+            color: $text-color;
+            font-size: 18px;
+            padding-top: 25px;
+            padding-bottom: 7px;
+            margin-left: 70px;
+            text-align: end;
+        }
+    }
+
+    .circle-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .content {
+            > p {
+                display: block;
+                margin: auto;
+                font-size: 30px;
+                color: $text-color;
+                span {
+                    font-size: 60px;
+                }
+            }
+            .wrapp-circles {
+                width: 100%;
+                ul {
+                    list-style: none;
+                    margin: 0px;
+                    padding:0px;
+                    li {
+                        position: relative;
+                        width:150px;
+                        height: 150px;
+                        a {
+                            width:350px;
+                            height: 350px;
+                            border-radius: 250px;
+                            position: absolute;
+                            top: 0px;
+                            left: -100px;
+                            opacity: 0.5;
+                            color: white;
+                            text-align: center;
+                            font-size: 22px;
+                            text-decoration: none;
+                            display: flex;
+                            opacity: 0;
+                            justify-content: center;
+                            align-items: center;
+                            span {
+                                display: block;
+                            }
+                            span:nth-child(1) {
+                                margin-top: 30px;
+                            }
+                        }
+                    }
+                    li.more-link-about {
+                        a {
+    
+                        }
+                    }
+                    li.more-link-works {
+                        a {
+    
+                        }
+                    }
+                    li.more-link-contacts {
+    
+                    }
+                }
+            }
+        }
+    }
+}
+.about-me {
+    background-image: url(img/circles-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .wrapp-about {
+        .about {
+            h1 {
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .wrapp-circles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        .about-circles {
+            position: relative;
+            .circle {
+
+            }
+            .wrapp-anime-circles {
+                width: 189px;
+                height: 189px;
+                position: relative;
+                .anime-circle {
+                    @include circles(100%, url(img/about_me/tocak.png), 0px, 0px);
+                }
+                .blue {
+                    @include wrapp_circle(120%, -52%, -79%);
+                    div {
+                        @include circles(0px, url(img/about_me/circle-blue.png), 25%, 15%);
+                    }
+                }
+                .orange {
+                    @include wrapp_circle(141%, -73%, 16%);
+                    div {
+                        @include circles(0px, url(img/about_me/circle-orange.png), 20%, 40%);
+                    }
+                }
+                .red-large {
+                    @include wrapp_circle(141%, 32%, -55%);
+                    div {
+                        @include circles(0px, url(img/about_me/circle-red-large.png), 68%, 27%);
+                    }
+                }
+                .red-small {
+                    @include wrapp_circle(91%, 44%, 62%);
+                    div {
+                        @include circles(0px, url(img/about_me/circle-red-small.png), 55%, 45%);
+                    }
+                }
+            }
+        }
+    }
+
+    .my-skils {
+        position: relative;
+        width:950px;
+        margin-left: auto;
+        margin-right: auto;
+        .diagram {
+            width:100%;
+            margin: auto;
+            height: 250px;
+            position: relative;
+            .chart-legend {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+                .label {
+                    height: 20%;
+                    border-top: 1px solid #aaaaaa;
+                    position: relative;
+                    span {
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                        width:20%;
+                        border-right: 4px solid;
+                    }
+                }
+            }
+
+            .chart-data {
+                list-style: none;
+                margin: 0px;
+                padding: 0px 2px;
+                overflow: hidden;
+                position: absolute;
+                bottom: 0px;
+                border-bottom: 1px solid black;
+                width: 80%;
+                height: 100%;
+                li {
+                    position: relative;
+                    float: left;
+                    width: 50px;
+                    margin: 0px 5%;
+                    height: 100%;
+                    div {
+                        background-image: url(img/cube.png);
+                        background-size: cover;
+                        background-position: top;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 0px;
+                        position: absolute;
+                        left: 0px;
+                        bottom: 0px;
+                    }
+                    span {
+                        position: absolute;
+                        right: -77%;
+                        bottom: 0px;
+                        height: 7px;
+                        width: 1px;
+                        background-color: black;
+                    }
+                    span.first-span {
+                        right: 184%;
+                    }
+                }
+            }
+
+            .chart-skills {
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                position: absolute;
+                bottom: -120px;
+                width: 80%;
+                li {
+                    float: left;
+                    margin:40px 0px;
+                    width: 16.66666666666667%;
+                    padding-left: 60px;
+                    box-sizing: border-box;
+                    span {
+                        display: block;
+                        transform: rotate(40deg);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.selected-works {
+    background-image: url(img/circles-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .wrapper-allie {
+        @include selected_works(300px, url(img/selected_works/allie-logo.png), url(img/selected_works/works-info.png), 100%, 0px, left, 0px, -900px);
+    }
+    
+    .wrapper-atalanta {
+        @include selected_works(300px, url(img/selected_works/atalanta-logo.jpg), url(img/selected_works/works-info.png), 100%, -300px, left, -20px, -900px);
+    }
+    
+    .wrapper-womo {
+        @include selected_works(300px, url(img/selected_works/parfum.jpg), url(img/selected_works/works-info.png), 100%, -600px, 'left', -40px, -900px);
+    }
+}
+
+.about-me, .selected-works {
+    z-index: 99 !important;
+}
+.wrapp-site {
+    z-index: -2;
+}
+.footer {
+    background-image: url(img/slider/overlay-background.png);
+    height: 550px;
+    background-attachment: fixed;
+    position: absolute !important;
+    z-index: -1;
+    .container {
+        .inner {
+            position: fixed;
+            height: 550px;
+            left: 0px;
+            bottom: 0px;
+            color: $text-color1;
+            width: 100%;
+            display: none;
+            .email {
+                button {
+                    background-color: #63a69f;
+                    a {
+                        text-decoration: none;
+                        color: #212529;
+                    }
+                }
+            }
+            .email1 {
+                button {
+                    background-color: #f2836b;
+                }
+            }
+            .social {
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                .linkedin {
+                    color: white;
+                    font-size: 24px;
+                    float: left;
+                    margin-right: 5px;
+                }
+                .twitter {
+                    color: white;
+                    font-size: 24px;
+                    float: left;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.wrapp-top-nav {
+    position: fixed;
+    z-index: 99;
+    .top-nav {
+        background-color: #0000008a;
+        padding-top: 10px;
+        .logo {
+            position: relative;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            span {
+                color: $text-color1;
+                text-shadow: 1px 1px #707070;
+                font-size: 16px;
+            }
+        }
+        .nav {
+            .nav-item {
+                a {
+                    transition: all .2s;
+                    color: $text-color1;
+                }
+                a:hover {
+                    transition: all .2s;
+                    color: $text-hover-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+.wrapper-slider {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-image: url(img/slider/overlay-background.png);
+    height: 0px;
+    z-index: 9999;
+    .content {
+        display:none;
+        height: 100%;
+        position: relative;
+        h1 {
+            color: $text-color1;
+        }
+        p {
+            color: $text-color1;
+        }
+        .iks {
+            font-size: 40px;
+            color: white;
+            position: absolute;
+            top: 30px;
+            right:15px;
+            transition: opacity .3s;
+            opacity: 1;
+        }
+        .iks:hover {
+            transition: all .3s;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .arrow-left {
+            font-size: 40px;
+            color: $text-color1;
+            position: absolute;
+            left: -20px;
+            top:53%;
+            transition: opacity .3s;
+            opacity: 1;
+        }
+        .arrow-left:hover {
+            transition: all .3s;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .arrow-right {
+            font-size: 40px;
+            color: $text-color1;
+            position: absolute;
+            right: -20px;
+            top:53%;
+            transition: opacity .3s;
+            opacity: 1;
+        }
+        .arrow-right:hover {
+            transition: all .3s;
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .container-slides {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 85%;
+            overflow: hidden;
+            .movable-slides {
+                overflow: hidden;
+                position: absolute;
+                top:0px;
+                left: 0px;
+                width: 600%;
+                height: 100%;
+                .slide {
+                    float: left;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    .img-wrapp {
+                        width:70%;
+                        padding-top: 40%;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .slide:hover {
+                    cursor: grab;
+                }
+                .slide:active {
+                    cursor: grabbing;
+                }
+            }
+        }
+        .curent-num {
+            position: absolute;
+            bottom: 50px;
+            left: 15px;
+            color: #cccccc;
+        }
+        .wrapp-points {
+            width: 100%;
+            position: absolute;
+            bottom: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .points {
+                overflow: hidden;
+                .point {
+                    float: left;
+                    width: 10px;
+                    height: 10px;
+                    margin: 0px 5px;
+                    a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        transition: background-color .3s;
+                        background-color: #7b7b7c;
+                        border-radius: 10px;
+                    }
+                    a.active-point {
+                        transition: background-color .3s;
+                        background-color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ui-loader {
+    display: none !important;
+}
+
+@media only screen and (max-width: 1000px) {
+    .my-skils {
+        height: 1060px !important;
+        width: 100% !important;
+        position: relative;
+        margin-bottom: 100px;
+        h1 {
+            margin-bottom: 100px;
+        }
+        .diagram {
+            transform:  translateX(-50%) translateY(-50%) rotate(90deg);
+            width: 950px !important;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            .chart-legend {
+                height: 100% !important;
+                li.label {
+                    position: relative;
+                    span {
+                        position: absolute;
+                        left: -15%;
+                        padding-top: 0px;
+                        box-sizing: border-box;
+                        border: none !important;
+                        transform: rotate(-20deg);
+                        text-align: end;
+                        font-size: 14px;
+                        margin-left: -60px;
+                    }    
+                }
+             }
+             .chart-data {
+                 width: 100% !important;
+                 li {
+                    margin: 0px 5.69% !important;
+                    span {
+                        right: -111% !important;
+                    }
+                    span.first-span {
+                        right: 209% !important;
+                    }
+                 }
+             }
+            .chart-skills {
+                bottom: 0px !important;
+                width: 100% !important;
+               li {
+                    position: relative;
+                    margin: 62px 0px;
+                    width: 16.66666666666667% !important;
+                    span {
+                        transform: rotate(-90deg) !important;
+                        transform-origin: 4px 59px;
+                    }
+               }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .selected-works {
+        .wrapper-allie {
+            @include selected_works(300px, url(img/selected_works/allie-logo.png), url(img/selected_works/works-info.png), 100%, 100%, right, 0px, -932px);
+            @include triangle_1(url(img/selected_works/works-info.png), 0px, -932px);
+        }
+        .wrapper-atalanta {
+            @include selected_works(300px, url(img/selected_works/atalanta-logo.jpg), url(img/selected_works/works-info.png), 100%, 100%, right, 100%, -900px);
+            @include triangle_1(url(img/selected_works/works-info.png), -72px, -932px);
+        }
+        
+        .wrapper-womo {
+            @include selected_works(300px, url(img/selected_works/parfum.jpg), url(img/selected_works/works-info.png), 100%, 100%, right, 100%, -900px);
+            @include triangle_1(url(img/selected_works/works-info.png), 0px, -932px);
+        }
+        .abs-tumbnail {
+            left: 0px !important;
+        }
+        .some-text {
+            left: 0px !important;
+            top: 0px !important;
+            height: 150px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .wrapp-anime-circles {
+        width: 129px !important;
+        height: 129px !important;
+    }
+}
+
+.selected-works {
+    z-index: 9999;
+}
