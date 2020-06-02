@@ -188,6 +188,8 @@ $(document).ready(function() {
     var move = 100;
     var move1 = 0;
 
+    $('.movable-slides .slide').css('width', $('.container.content').width() + 'px');
+
     $(window).resize(function() {
         $('.movable-slides .slide').css('width', $('.container.content').width() + 'px');
     });
@@ -235,12 +237,10 @@ $(document).ready(function() {
     
             $('.slide').bind('mouseup', function() {
                 if(direction < 0) {
-                    var left = '-'
-                    left_right(left);
+                    left_right('-');
                 }
                 else {
-                    var right = '+';
-                    left_right(right);
+                    left_right('+');
                 }
                 $('.slide').unbind('mousemove');
                 $('.slide').unbind('mouseup');

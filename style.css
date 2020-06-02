@@ -326,10 +326,11 @@ body {
   width: 16.6666666667%;
   padding-left: 60px;
   box-sizing: border-box;
+  transform: rotate(40deg);
 }
 .about-me .my-skils .diagram .chart-skills li span {
   display: block;
-  transform: rotate(40deg);
+  text-align: center;
 }
 
 .selected-works {
@@ -953,13 +954,14 @@ body {
     width: 100% !important;
   }
   .my-skils .diagram .chart-skills li {
-    position: relative;
     margin: 62px 0px;
+    padding-left: 0px !important;
     width: 16.6666666667% !important;
+    transform: rotate(-90deg) !important;
   }
   .my-skils .diagram .chart-skills li span {
-    transform: rotate(-90deg) !important;
-    transform-origin: 4px 59px;
+    text-align: left !important;
+    margin-left: 50px;
   }
 }
 @media only screen and (max-width: 767px) {
