@@ -188,10 +188,8 @@ $(document).ready(function() {
     var move = 100;
     var move1 = 0;
 
-    $('.movable-slides .slide').css('width', $('.container.content').width() + 'px');
-
     $(window).resize(function() {
-        $('.movable-slides .slide').css('width', $('.container.content').width() + 'px');
+        $('.movable-slides .slide').css('width', $('.container-slides').width() + 'px');
     });
 
     function slider_html(elem) {
@@ -209,6 +207,7 @@ $(document).ready(function() {
         $('.wrapp-points .points .point:first').find('a').addClass('active-point');
         $('.wrapper-slider').animate({height: $height + 'px'}, 1000, 'easeOutQuart', function() {
             $('.content').fadeIn(400);
+            $('.movable-slides .slide').css('width', $('.container-slides').width() + 'px');
         });
 
         $('.curent-num').html(($('.movable-slides .slide.active').index() + 1) + ' ' + 'of 6');

@@ -549,6 +549,7 @@ body {
         display:none;
         height: 100%;
         position: relative;
+        width: 100%;
         h1 {
             color: $text-color1;
         }
@@ -603,6 +604,7 @@ body {
             align-items: center;
             position: relative;
             height: 85%;
+            width: 100%;
             overflow: hidden;
             .movable-slides {
                 overflow: hidden;

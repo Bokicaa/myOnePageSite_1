@@ -778,6 +778,7 @@ body {
   display: none;
   height: 100%;
   position: relative;
+  width: 100%;
 }
 .wrapper-slider .content h1 {
   color: #cccccc;
@@ -833,6 +834,7 @@ body {
   align-items: center;
   position: relative;
   height: 85%;
+  width: 100%;
   overflow: hidden;
 }
 .wrapper-slider .content .container-slides .movable-slides {
